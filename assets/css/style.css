@@ -1616,6 +1616,10 @@ section {
   transition: ease-in-out 0.3s;
 }
 
+.call-box p {
+  padding-left: 25px !important;
+}
+
 .icon-ex {
   font-size: 14px !important;
   border: none !important;
