@@ -23,18 +23,25 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
+  
   <script>
     let map;
 
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -22.7750079, lng: -47.2914993 },
-        zoom: 17,
-      });
-    }
+function initMap() {
+  const coordinates = { lat: -22.774834822931325, lng: -47.28931060300896 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: coordinates,
+    zoom: 18,
+  });
+  new google.maps.Marker({
+    position: coordinates,
+    map,
+    title: "CB PLAST",
+  });
+}
   </script>
   <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEcbywfh0BO86zMlzdfyfmolWzQTNTAcw&callback=initMap&libraries=&v=weekly"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClS_R6LRMAJARzodnRFLwjr3PS9y7tZI8&callback=initMap&libraries=&v=weekly"
     async></script>
 
 </head>
@@ -44,13 +51,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent">
       <div class="container d-flex align-items-center justify-content-between">
-
         <div class="logo-container">
           <img src="assets/img/logo3.png">
         </div>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -251,7 +254,7 @@
           <div class="text-center">
             <h3>Produtos de qualidade garantida</h3>
             <p> Matéria prima de alta qualidade e estrutura para melhor atendê-lo, com empilhadeiras e balanças de alta
-              precisão</p>
+              precisão.</p>
           </div>
 
         </div>
@@ -448,7 +451,6 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 

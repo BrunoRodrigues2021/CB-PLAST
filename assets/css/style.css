@@ -1566,7 +1566,7 @@ section {
 #map {
   width: 80%;
   margin-left: 10%;
-  height: 420px;
+  height: 70vh;
   border: 2px solid green;
 }
 
@@ -1630,5 +1630,8 @@ section {
     position: relative;
     bottom: 0;
     left: 0;
+  }
+  #map {
+    height: 40vh;
   }
 }
